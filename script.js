@@ -95,7 +95,7 @@ function alterarContexto (contexto) {
 
 const contagemRegressiva = () => {
     if(tempoDeCorridoEmSegundos <= 0) {
-        
+
         somFinalizadaContagem.play()
         alert('Tempo finalizado');
 
@@ -103,7 +103,7 @@ const contagemRegressiva = () => {
         if (focoAtivo) {
             const evento = new CustomEvent('focoFinalizado');
             document.dispatchEvent(evento);
-
+            
         }
         
         zerar();
