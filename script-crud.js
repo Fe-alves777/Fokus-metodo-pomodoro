@@ -139,6 +139,7 @@ const removerTarefas = (somenteCompletas) => {
     document.querySelectorAll(seletor).forEach (elemento => {
         elemento.remove();
     })
+    paragrafoDescricaoTarefa.textContent = '';
     tarefas = somenteCompletas ? tarefas.filter(tarefa => !tarefa.completa) : [];
     atualizarTarefas();
 
